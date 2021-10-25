@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>21 Savage Roulette</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="savage">
+        <h1>Savage Roulette</h1>
+        <img src="img/savage21.jpg" alt="21 Savage Profile Photo">
+
+        <p>Login or Signup:</p>
+
+        <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+        <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+
+    </div>
+<div class="container">
+
+    <form action="/" method="POST">
+        <label for="black">Black</label>
+        <input class="choice" type="radio" value="black" name="black"> 
+        <label for="green">Green</label>
+        <input class="choice" type="radio" value="green" name="green">
+        <label for="red">Red</label>
+        <input class="choice" type="radio" value="red" name="red"> 
+        <input type="bet" name="bet" required>
+        <button type="submit">Place your bet</button>
+    </form>
+
+    <% if(outcome){ %>
+                    
+    <h2><%=outcome%>!</h2>
+                    
+    <% } %>
+
+</div>
+</body>
+</html>
