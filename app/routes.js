@@ -55,7 +55,7 @@ function randomize(player, computer) {
       let player = req.body.color
       let computer = winner[Math.floor(Math.random() * winner.length)]
       let result = randomize(player, computer)
-      db.collection('accounting').save({outcome: result, bet: parseFloat(req.body.bet)}, (err, savedResult) => {
+      db.collection('accounting').save({outcome: result, bet: parseFloat(req.body.bet)}, (err, result) => {
         if (err) return console.log(err)
         console.log('saved to database')
         res.render('index.ejs', {outcome: result, player, computer})
