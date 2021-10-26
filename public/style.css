@@ -1,7 +1,21 @@
 body{
   padding-top:80px;
   word-wrap:break-word;
+  background-image: url('img/casino-scene.jpeg')
 }
 img{
   height: 200px;
+}
+.savage{
+  background-color: rgba(255, 255, 240, 0.453);
+  width: 300px;
+  float: left;
+  color: red;
+  text-align: center;
+
+}
+.container{
+  text-align: center;
+  background-color: rgba(255, 255, 240, 0.453);
+  width: auto;
 }
